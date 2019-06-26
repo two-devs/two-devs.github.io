@@ -198,6 +198,20 @@ body,html{
   height: 44px;
   background: #fff;
 }
+.mob_links{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.mob_links li a{
+  text-decoration:none;
+  color: azure;
+  font-size: 24px;
+  font-family: 'Titillium Web', sans-serif;  
+}
 .line{
   border-radius: 3px;
   border-radius: 5px;
