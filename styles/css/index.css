@@ -35,14 +35,14 @@ body,html{
   width: 60%;
   height: 100%;
   background: #506cf0;
-  clip-path: inset(0% 0 round 0 800px 20px 0%);
+  -webkit-clip-path: inset(0% 0 round 0 800px 20px 0%);
   z-index: 3;
 }
 .min_fill{
   transform: translateY(-400px);
   right: 210px;
   z-index: 0;
-  clip-path: inset(0px 0% round 0 600px 0% 0%);
+  -webkit-clip-path: inset(0px 0% round 0 600px 0% 0%);
   position: absolute;
   background: #506cf0;
   width: 700px;
@@ -183,10 +183,10 @@ body,html{
   margin-top: -2px;
   width: 100vw;
   min-height: 700px;
-  background: linear-gradient(180deg,#FE7860,#fff) ;
+  background: #fff ;
 }
 .min_main_fill{
-  clip-path: inset(0 0 round 0 0px 320px 0px);
+  -webkit-clip-path: inset(0 0 round 0 0px 320px 0px);
   width: 570px;
   height: 470px;
   background: #506cf0;
@@ -194,7 +194,7 @@ body,html{
   left: 0;
 }
 .main_fill{
-  clip-path: inset(0 0 round 0 0 300px 0);
+  -webkit-clip-path: inset(0 0 round 0 0 300px 0);
   width: 700px;
   height: 300px;
   background: #506cf0;
@@ -226,7 +226,7 @@ body,html{
   .fill{
     border-bottom-right-radius: 600px;
     top: 0px;
-    clip-path: inset(0 0px round 0px 600px 700px 0px);
+    -webkit-clip-path: inset(0 0px round 0px 600px 700px 0px);
     width: 350px;
     height: 600px;
   }
