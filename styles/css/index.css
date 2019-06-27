@@ -100,11 +100,15 @@ body,html{
 }
 .fiz{
   transition: .7s;
-  background: #506cf0;
+  background: #cacbcf;
   width: 1px;
   height: 5px;
   border-right: 10px solid #506cf0;
   border-left: 10px solid #FE7860;
+}
+.typed-text{
+  margin-left: 10px;
+  color: #FE7860;
 }
 /* menu */
 .menu{
@@ -244,7 +248,20 @@ body,html{
   color: aliceblue;
 }
 /* MAIN */
+.main_title{
+  font-size: 30px;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #fff;  
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
 .main{
+  display: block;
+  flex-direction: column;
+  align-items: center;
   margin-top: -2px;
   width: 100vw;
   min-height: 700px;
@@ -265,6 +282,16 @@ body,html{
   background: #506cf0;
   position: absolute;
   right: 210px;
+}
+.next_fill{
+  right: -60vw;
+  top: 450px;
+  -webkit-clip-path: inset(0 0 round 900px 0px 0px 0px);
+  position: relative;
+  width: 50%;
+  height: 250px;
+  background: #506cf0;
+
 }
 /*|||||||||||| ADAPTIVE ||||||||||||||*/
 
@@ -326,6 +353,7 @@ body,html{
   .devs{
     display: none;
   }
+ 
   .border{
     border:none;
     background: #fff;
