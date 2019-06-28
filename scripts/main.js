@@ -50,3 +50,16 @@ function erase() {
  document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
    if(textArray.length) setTimeout(type, newTextDelay + 250);
  });
+
+window.onload = function(){
+	window.setInterval(function(){
+		var now = new Date();
+		var clock = document.getElementById("clock");
+    if(now.getMinutes()>9){
+    clock.innerHTML = `${now.getHours()}:${now.getMinutes()}`;
+    }
+    else{
+    clock.innerHTML = `${now.getHours()}:0${now.getMinutes()}`;
+    }
+	}, 1000);
+};
