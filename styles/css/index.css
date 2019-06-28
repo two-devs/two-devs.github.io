@@ -5,7 +5,26 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 /*---------*/
-
+/* ANIMATIONS */
+@keyframes big-waves {
+  0%{
+  -webkit-clip-path: inset(0px 0% round 0 500px 0% 0%);
+  }
+  100%{
+  -webkit-clip-path: inset(0% 0 round 0 800px 20px 0%);
+  }
+}
+@keyframes min-waves{
+  0%{
+  -webkit-clip-path: inset(0px 0% round 0 200px 0% 0%);
+  }
+  50%{
+  }
+  100%{
+    -webkit-clip-path: inset(0px 0% round 0 800px 0% 0%);
+    }
+}
+/*--------*/
 body,html{
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -25,6 +44,8 @@ body,html{
   background:#FE7860;
 }
 .fill{
+  -webkit-animation: big-waves 3s infinite alternate-reverse;
+  transition: .5s;
   flex-direction: column;
   display: flex;
   padding: 50px;
@@ -40,6 +61,8 @@ body,html{
   z-index: 3;
 }
 .min_fill{
+  animation-delay: 6s;
+  -webkit-animation: min-waves 3s infinite alternate-reverse;
   transform: translateY(-400px);
   right: 210px;
   z-index: 0;
@@ -88,8 +111,8 @@ body,html{
 .border:hover .fiz{
   border-right: 10px solid #FE7860;
   border-left: 10px solid #506cf0;
-
 }
+
 .two{
   transition: .7s color;
   color: #FE7860;
@@ -140,7 +163,7 @@ body,html{
   font-family: 'B612 Mono', monospace;
 }
 .link p{
-  bottom: -15px;
+  bottom: -13px;
   transition: .5s;
   z-index:3;
   position: absolute;
@@ -338,7 +361,7 @@ body,html{
   .screen{
     background: #000;
     padding: 7px;
-    left: 180px;
+    left: 175px;
     width: 170px;
     height: 340px;
     top: 160px;
@@ -371,6 +394,7 @@ body,html{
     height: 5px;
   }
   .phone_title{
+    left: -10px;
     top: -15px;
     position: relative;
     display: flex;
@@ -381,18 +405,19 @@ body,html{
     height: 50px;
     font-size: 30px;
   }
-  .phone_title h3{
-    color: #506cf0;
-    height: 10px;
-    margin: 0;
-    display: block;
-  }
-  .phone_title h3:nth-child(1){
-    color: #FE7860;
+  .typed-text{
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
   }
   .home-line{
+    border-radius: 2px;
     margin-bottom: 5px;
-    height: 4px;
+    height: 3px;
     width: 50%;
     background: #000;
   }

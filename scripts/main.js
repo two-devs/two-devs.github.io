@@ -1,12 +1,12 @@
-$(document).ready(function () {
-  $('.mob-menu-btn').click(function (e) { 
-    $('.mob-menu').css('transform','translate(0)')
-  });
+ $(document).ready(function () {
+   $('.mob-menu-btn').click(function (e) { 
+     $('.mob-menu').css('transform','translate(0)')
+   });
+ });
+ $('.btn-close').click(function (e) { 
+   $('.mob-menu').css('transform','translateX(100%)')
 });
-$('.btn-close').click(function (e) { 
-  $('.mob-menu').css('transform','translateX(100%)')
-});
-AOS.init();
+ AOS.init();
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
