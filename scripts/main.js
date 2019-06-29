@@ -14,7 +14,7 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
- "TWO-DEVS","FRONT-END","TWO-DEVS","BACK-END"
+ "_TWO_ DEVS","FRONT END","_TWO_ DEVS","BACK END"
 ];
 const typingDelay = 200;
 const erasingDelay = 100;

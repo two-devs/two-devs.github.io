@@ -416,7 +416,9 @@ body,html{
     display: none;
   }
   .iOS .typed-text{
-    font-size: 20px;
+    top: 60px;
+    right: 2px;
+    font-size: 30px;
   }
   .screen{
     background: #000;
