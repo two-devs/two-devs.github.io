@@ -70,7 +70,7 @@ window.onload = function(){
 $(document).ready(function () {
  var ua = detect.parse(navigator.userAgent);
    if (ua.os.family =='iOS'){
-    
+    $('.screen').addClass('iOS')
    }
    if (ua.os.family == 'Android'){
       $('.screen').addClass('Android')
