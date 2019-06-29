@@ -1,3 +1,4 @@
+ // OPEN and CLOSE menu
  $(document).ready(function () {
    $('.mob-menu-btn').click(function (e) { 
      $('.mob-menu').css('transform','translate(0)')
@@ -6,7 +7,9 @@
  $('.btn-close').click(function (e) { 
    $('.mob-menu').css('transform','translateX(100%)')
 });
- AOS.init();
+
+ AOS.init();//AOS
+ //Print words
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
@@ -63,3 +66,6 @@ window.onload = function(){
     }
 	}, 1000);
 };
+//Detect OS
+var ua = detect.parse(navigator.userAgent);
+alert(ua.os.name)
