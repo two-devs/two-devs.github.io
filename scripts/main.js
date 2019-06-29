@@ -69,3 +69,6 @@ window.onload = function(){
 //Detect OS
 var ua = detect.parse(navigator.userAgent);
 alert(ua.os.name)
+if (ua.os.name == 'Windows 7'){
+  alert('Hello')
+}
