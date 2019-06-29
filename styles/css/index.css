@@ -374,6 +374,7 @@ body,html{
     display: none;
   }
  #clock{
+   font-size:40px;
    margin-top: 10px;
    position: absolute;
    text-align: center;

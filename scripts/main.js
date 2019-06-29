@@ -72,6 +72,6 @@ alert('your OS:'+ua.os.name)
 if (ua.os.name == 'Windows 7'){
   alert('Hello kkk')
 }
-if (ua.os.name =='iOS'){
+if (ua.os.name =='iOS 12.3.1'){
   alert('hi')
 }
