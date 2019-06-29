@@ -47,10 +47,18 @@ SecondOptions = {
   loop: true,
   backDelay: 90
 }
+var helloOpt = {
+  strings:['HELLO, WORLD :)'],
+  typeSpeed: 200,
+  backSpeed: 120,
+  showCursor: true,
+  cursorChar: '|',
+  loop: false,
+}
 var typed = new Typed(".typed",options);
 var First = new Typed(".first_p",FirstOptions);
 var Second = new Typed(".second_p",SecondOptions);
-
+var Hello = new Typed(".hello",helloOpt)
 //----------------------//
 window.onload = function(){
  window.setInterval(function(){

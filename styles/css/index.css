@@ -98,10 +98,19 @@ body,html{
   background: #000;
 }
 .eye{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 9px;
   height: 9px;
   border-radius: 50%;
   background: #3d3d3d;
+}
+.little_eye{
+  width: 3px;
+  height: 3px;
+  background: #000;
+  border-radius: 50%;
 }
 .border{
   background: #fff;
@@ -114,6 +123,12 @@ body,html{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.shell{
+  left: 29px;
+  top: 15px;
+  font-size: 13px;
+  position: absolute;
 }
 p.typed{
   color:#506cf0;
@@ -356,7 +371,9 @@ p.typed{
     display: none;
   }
   /* SCREEN */
-  
+  .shell{
+    display: none;
+  }
   /* ANDROID */
   .Android{
     padding: 5px;
