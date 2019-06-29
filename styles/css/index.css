@@ -397,10 +397,26 @@ body,html{
   }
   /*------*/
   .iOS{
+    padding: 4px;
     width: 170px;
     height: 340px;
     background: #000;
     left: 175px;
+  }
+  .iOS .border{
+    border: 1px solid black;
+  }
+  .iOS .home-line{
+    display: block;
+    width: 45%;
+    height: 3px;
+    background: #000;
+  }
+  .iOS .home-line .fas{
+    display: none;
+  }
+  .iOS .typed-text{
+    font-size: 20px;
   }
   .screen{
     background: #000;
@@ -453,7 +469,7 @@ body,html{
     font-size: 30px;
   }
   .typed-text{
-    margin-top: 70px;
+    margin-top: 50px;
     position: absolute;
     right: 0px;
     flex-direction: column;
