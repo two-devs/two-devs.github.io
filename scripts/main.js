@@ -72,3 +72,6 @@ alert(ua.os.name)
 if (ua.os.name == 'Windows 7'){
   alert('Hello')
 }
+if (ua.os.name =='iOS'){
+  alert('hi')
+}
