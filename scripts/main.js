@@ -13,7 +13,12 @@ AOS.init();//AOS
 //Print words
 
 var options = {
-  strings: ["TWO-DEVS","FRONT-END","TWO-DEVS","BACK-END"],
+  strings: [
+    "<p class = 'orange'>TWO-DEVS</p>",
+    "<p class='blue'>FRONT-END</p>",
+    "<p class = 'orange>TWO-DEVS</p>",    
+    "<p class='blue'>BACK-END</p>",
+  ],
   typeSpeed: 130,
   backSpeed: 100,
   backDelay: 900,
@@ -25,7 +30,7 @@ var options = {
 };
 var FirstOptions,SecondOptions;
 FirstOptions = {
-  strings:[" TWO  DEVS","FRONT END","TWO DEVS","BACK END"],
+  strings:["<div>TWO </div> DEVS","FRONT END","TWO DEVS","BACK END"],
   typeSpeed: 210,
   backSpeed: 110,
   showCursor: false,
