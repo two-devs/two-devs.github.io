@@ -374,6 +374,9 @@ p.typed{
   .shell{
     display: none;
   }
+  .camera{
+    display:none;
+  }
   /* ANDROID */
   .Android{
     padding: 5px;
@@ -423,13 +426,14 @@ p.typed{
   }
   /*------*/
   .iOS{
-    padding: 4px;
+    padding: 5px;
     width: 170px;
     height: 340px;
     background: #000;
     left: 175px;
   }
   .iOS .border{
+    border-radius: 20px;
     border: 1px solid black;
   }
   .iOS .home-line{
