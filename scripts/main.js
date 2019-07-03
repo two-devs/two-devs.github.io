@@ -38,7 +38,7 @@ AOS.init();//AOS
 
 var options = {
  strings: [
-   "<p class = 'orange'>TWO-DEVS</p>",
+   "<span class = 'orange'>TWO</span><span class='blue'>DEVS</span>",
    "<p class='blue'>FRONT-END</p>",
    "<p class = 'orange>TWO-DEVS</p>",    
    "<p class='blue'>BACK-END</p>",
