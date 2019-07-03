@@ -1,3 +1,4 @@
+
 // OPEN and CLOSE menu
 $(document).ready(function () {
   var count = 0;
@@ -8,29 +9,57 @@ $(document).ready(function () {
      
  $('.line').addClass('clicked');
      if($('.line').hasClass('clicked')){
+       $('.bg').css('transform','translate(0)');
        $('.btn-menu').css({
          'transform':'translateX(-400px)',
          'background': '#FE7860'
        });
        $('.menu').css({
+        'border-top-left-radius': '90px',
+        'border-bottom-left-radius': '90px',
          'transform':'translateX(0)',
          'background': '#FE7860'
-       })
+       });
+       $('.link').css('transform','translateX(0)')
      }
      console.log(count)
    }
  else if (count%2  == 0){
+  $('.bg').css('transform','translateX(150%)')  
    $('.line').removeClass('clicked');
    $('.btn-menu').css({
      'transform':'translateX(0)',
      'background': '#506cf0'
    });
    $('.menu').css({
+    'border-top-left-radius': '100%',
+    'border-bottom-left-radius': '100%',
      'transform':'translateX(100%)',
      'background': '#506cf0'
    })
+   $('.link').css({
+     'transform':'translate(500px)'
+  })
  }
  });
+ $('.bg').click(function (){
+  count+=3; 
+  $('.bg').css('transform','translateX(150%)') 
+  $('.line').removeClass('clicked');
+  $('.btn-menu').css({
+    'transform':'translateX(0)',
+    'background': '#506cf0'
+  });
+  $('.menu').css({
+   'border-top-left-radius': '100%',
+   'border-bottom-left-radius': '100%',
+    'transform':'translateX(100%)',
+    'background': '#506cf0'
+  })
+  $('.link').css({
+    'transform':'translate(500px)'
+ })
+ })
 });
 
 AOS.init();//AOS
@@ -72,7 +101,7 @@ SecondOptions = {
  backDelay: 90
 }
 var helloOpt = {
- strings:['HELLO, WORLD :)'],
+ strings:[`hello, world`],
  typeSpeed: 200,
  backSpeed: 120,
  showCursor: true,
